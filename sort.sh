@@ -21,7 +21,7 @@ do
     for((j = 0; j<4-i-1; j++))
     do
 
-        if [ ${array[j]} -gt ${array[$((j+1))]} ]
+        if [ ${array[j]} -lt ${array[$((j+1))]} ]
         then
             # swap
             temp=${array[$j]}
